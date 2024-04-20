@@ -9,7 +9,7 @@ public class HelloWorld {
   private static final String template = "Hello, %s!";
 
   @GetMapping("/greeting")
-  public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-    return String.format(template, name);
+  public String greeting(@RequestParam(value = "value", defaultValue = "World") String value) {
+    return String.format(template, value);
   }
 }
